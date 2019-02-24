@@ -1,0 +1,159 @@
+body {
+  /* background-color: #f9f5ec; */
+  background-color: #ffe6cc;
+  font: 1em georgia;
+}
+
+.content {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 10px;
+}
+
+.max-width {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding-top: 25px;
+}
+
+p {
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 16pt;
+}
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  /* background: #f3ebd8; */
+  background: #ffdab3;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+}
+
+.language {
+  position: relative;
+  height: 50px;
+}
+
+.navigation li a.selected {
+  text-decoration: underline;
+}
+
+.navigation {
+  margin: auto;
+}
+
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navigation-language ul {
+  position: relative;
+  float: right;
+  left: unset;
+  transform: none;
+}
+
+.navigation li::after {
+  content: "|";
+}
+
+.navigation li:last-of-type::after {
+  content: "";
+}
+
+.navigation a {
+  text-decoration: none;
+  color: black;
+  padding: 16px 30px;
+}
+
+.navigation-language a {
+  text-decoration: none;
+  color: black;
+  padding: 16px 10px;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.email {
+  color: black;
+}
+
+.email:hover {
+  text-shadow: 0px 0px 10px #d0b162;
+}
+
+ol li ul li {
+  list-style: none;
+}
+
+ul li ul li {
+  list-style: none;
+}
+
+h4 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.spacing p {
+  line-height: 25px;
+}
+
+.spacing li {
+  line-height: 25px;
+}
+
+.top {
+  padding-bottom: 30px;
+}
+
+.contact {
+  padding-bottom: 40px;
+}
+
+.sarva {
+  padding-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation a {
+    padding: 16px 3px;
+  }
+
+  .navigation-language a {
+    padding: 16px 10px;
+  }
+
+  .logo {
+    width: 50%;
+  }
+}

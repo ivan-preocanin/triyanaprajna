@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Triyana Prajna</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<body onload="setTitle('syllabus');">
+  <div class="content">
+    <div class="language max-width">
+      <div class="navigation navigation-language">
+        <ul>
+          <li><a href="" id="language-sr" onclick="setCookie('language', 'sr','365')">sr</a></li>
+          <li><a href="" id="language-hr" onclick="setCookie('language', 'hr','365')">hr</a></li>
+          <li><a href="" id="language-en" onclick="setCookie('language', 'en','365')">en</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header">
+      <div class="logo"><img src="img/pecat.png"></div>
+    </div>
+    <div class="max-width" w3-include-html="syllabus.html">
+      
+    </div>
+  </div>
+  <div class="footer" w3-include-html="navigation.html">
+    
+  </div>
+  <script>
+    includeHTML();
+  </script>
+</body>
+</html>
